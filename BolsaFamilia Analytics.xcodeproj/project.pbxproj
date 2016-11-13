@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D9A25601DD89B73007EE6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */; };
+		1D9A25621DD89B73007EE6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25611DD89B73007EE6E9 /* ViewController.swift */; };
+		1D9A25651DD89B73007EE6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25631DD89B73007EE6E9 /* Main.storyboard */; };
+		1D9A25681DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25661DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld */; };
+		1D9A256A1DD89B73007EE6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25691DD89B73007EE6E9 /* Assets.xcassets */; };
+		1D9A256D1DD89B73007EE6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A256B1DD89B73007EE6E9 /* LaunchScreen.storyboard */; };
+		1D9A25781DD89B73007EE6E9 /* BolsaFamilia_AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25771DD89B73007EE6E9 /* BolsaFamilia_AnalyticsTests.swift */; };
+		1D9A25831DD89B73007EE6E9 /* BolsaFamilia_AnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25821DD89B73007EE6E9 /* BolsaFamilia_AnalyticsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D9A25741DD89B73007EE6E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D9A25541DD89B72007EE6E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D9A255B1DD89B73007EE6E9;
+			remoteInfo = "BolsaFamilia Analytics";
+		};
+		1D9A257F1DD89B73007EE6E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D9A25541DD89B72007EE6E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D9A255B1DD89B73007EE6E9;
+			remoteInfo = "BolsaFamilia Analytics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D9A255C1DD89B73007EE6E9 /* BolsaFamilia Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BolsaFamilia Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D9A25611DD89B73007EE6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D9A25641DD89B73007EE6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D9A25671DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BolsaFamilia_Analytics.xcdatamodel; sourceTree = "<group>"; };
+		1D9A25691DD89B73007EE6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D9A256C1DD89B73007EE6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D9A256E1DD89B73007EE6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9A25731DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BolsaFamilia AnalyticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9A25771DD89B73007EE6E9 /* BolsaFamilia_AnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolsaFamilia_AnalyticsTests.swift; sourceTree = "<group>"; };
+		1D9A25791DD89B73007EE6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9A257E1DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BolsaFamilia AnalyticsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9A25821DD89B73007EE6E9 /* BolsaFamilia_AnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolsaFamilia_AnalyticsUITests.swift; sourceTree = "<group>"; };
+		1D9A25841DD89B73007EE6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D9A25591DD89B73007EE6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A25701DD89B73007EE6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A257B1DD89B73007EE6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D9A25531DD89B72007EE6E9 = {
+			isa = PBXGroup;
+			children = (
+				1D9A255E1DD89B73007EE6E9 /* BolsaFamilia Analytics */,
+				1D9A25761DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests */,
+				1D9A25811DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests */,
+				1D9A255D1DD89B73007EE6E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D9A255D1DD89B73007EE6E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A255C1DD89B73007EE6E9 /* BolsaFamilia Analytics.app */,
+				1D9A25731DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests.xctest */,
+				1D9A257E1DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D9A255E1DD89B73007EE6E9 /* BolsaFamilia Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */,
+				1D9A25611DD89B73007EE6E9 /* ViewController.swift */,
+				1D9A25631DD89B73007EE6E9 /* Main.storyboard */,
+				1D9A25691DD89B73007EE6E9 /* Assets.xcassets */,
+				1D9A256B1DD89B73007EE6E9 /* LaunchScreen.storyboard */,
+				1D9A256E1DD89B73007EE6E9 /* Info.plist */,
+				1D9A25661DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld */,
+			);
+			path = "BolsaFamilia Analytics";
+			sourceTree = "<group>";
+		};
+		1D9A25761DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A25771DD89B73007EE6E9 /* BolsaFamilia_AnalyticsTests.swift */,
+				1D9A25791DD89B73007EE6E9 /* Info.plist */,
+			);
+			path = "BolsaFamilia AnalyticsTests";
+			sourceTree = "<group>";
+		};
+		1D9A25811DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D9A25821DD89B73007EE6E9 /* BolsaFamilia_AnalyticsUITests.swift */,
+				1D9A25841DD89B73007EE6E9 /* Info.plist */,
+			);
+			path = "BolsaFamilia AnalyticsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D9A255B1DD89B73007EE6E9 /* BolsaFamilia Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9A25871DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia Analytics" */;
+			buildPhases = (
+				1D9A25581DD89B73007EE6E9 /* Sources */,
+				1D9A25591DD89B73007EE6E9 /* Frameworks */,
+				1D9A255A1DD89B73007EE6E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BolsaFamilia Analytics";
+			productName = "BolsaFamilia Analytics";
+			productReference = 1D9A255C1DD89B73007EE6E9 /* BolsaFamilia Analytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D9A25721DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9A258A1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsTests" */;
+			buildPhases = (
+				1D9A256F1DD89B73007EE6E9 /* Sources */,
+				1D9A25701DD89B73007EE6E9 /* Frameworks */,
+				1D9A25711DD89B73007EE6E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D9A25751DD89B73007EE6E9 /* PBXTargetDependency */,
+			);
+			name = "BolsaFamilia AnalyticsTests";
+			productName = "BolsaFamilia AnalyticsTests";
+			productReference = 1D9A25731DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D9A257D1DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9A258D1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsUITests" */;
+			buildPhases = (
+				1D9A257A1DD89B73007EE6E9 /* Sources */,
+				1D9A257B1DD89B73007EE6E9 /* Frameworks */,
+				1D9A257C1DD89B73007EE6E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D9A25801DD89B73007EE6E9 /* PBXTargetDependency */,
+			);
+			name = "BolsaFamilia AnalyticsUITests";
+			productName = "BolsaFamilia AnalyticsUITests";
+			productReference = 1D9A257E1DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D9A25541DD89B72007EE6E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = UnB;
+				TargetAttributes = {
+					1D9A255B1DD89B73007EE6E9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M368ZHZCHV;
+						ProvisioningStyle = Automatic;
+					};
+					1D9A25721DD89B73007EE6E9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M368ZHZCHV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D9A255B1DD89B73007EE6E9;
+					};
+					1D9A257D1DD89B73007EE6E9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M368ZHZCHV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D9A255B1DD89B73007EE6E9;
+					};
+				};
+			};
+			buildConfigurationList = 1D9A25571DD89B72007EE6E9 /* Build configuration list for PBXProject "BolsaFamilia Analytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D9A25531DD89B72007EE6E9;
+			productRefGroup = 1D9A255D1DD89B73007EE6E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D9A255B1DD89B73007EE6E9 /* BolsaFamilia Analytics */,
+				1D9A25721DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests */,
+				1D9A257D1DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D9A255A1DD89B73007EE6E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9A256D1DD89B73007EE6E9 /* LaunchScreen.storyboard in Resources */,
+				1D9A256A1DD89B73007EE6E9 /* Assets.xcassets in Resources */,
+				1D9A25651DD89B73007EE6E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A25711DD89B73007EE6E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A257C1DD89B73007EE6E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D9A25581DD89B73007EE6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9A25681DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld in Sources */,
+				1D9A25621DD89B73007EE6E9 /* ViewController.swift in Sources */,
+				1D9A25601DD89B73007EE6E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A256F1DD89B73007EE6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9A25781DD89B73007EE6E9 /* BolsaFamilia_AnalyticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9A257A1DD89B73007EE6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9A25831DD89B73007EE6E9 /* BolsaFamilia_AnalyticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D9A25751DD89B73007EE6E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D9A255B1DD89B73007EE6E9 /* BolsaFamilia Analytics */;
+			targetProxy = 1D9A25741DD89B73007EE6E9 /* PBXContainerItemProxy */;
+		};
+		1D9A25801DD89B73007EE6E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D9A255B1DD89B73007EE6E9 /* BolsaFamilia Analytics */;
+			targetProxy = 1D9A257F1DD89B73007EE6E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D9A25631DD89B73007EE6E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D9A25641DD89B73007EE6E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D9A256B1DD89B73007EE6E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D9A256C1DD89B73007EE6E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D9A25851DD89B73007EE6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D9A25861DD89B73007EE6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D9A25881DD89B73007EE6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1D9A25891DD89B73007EE6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1D9A258B1DD89B73007EE6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia AnalyticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-AnalyticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BolsaFamilia Analytics.app/BolsaFamilia Analytics";
+			};
+			name = Debug;
+		};
+		1D9A258C1DD89B73007EE6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia AnalyticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-AnalyticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BolsaFamilia Analytics.app/BolsaFamilia Analytics";
+			};
+			name = Release;
+		};
+		1D9A258E1DD89B73007EE6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia AnalyticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-AnalyticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "BolsaFamilia Analytics";
+			};
+			name = Debug;
+		};
+		1D9A258F1DD89B73007EE6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M368ZHZCHV;
+				INFOPLIST_FILE = "BolsaFamilia AnalyticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-AnalyticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "BolsaFamilia Analytics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D9A25571DD89B72007EE6E9 /* Build configuration list for PBXProject "BolsaFamilia Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9A25851DD89B73007EE6E9 /* Debug */,
+				1D9A25861DD89B73007EE6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D9A25871DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9A25881DD89B73007EE6E9 /* Debug */,
+				1D9A25891DD89B73007EE6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D9A258A1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9A258B1DD89B73007EE6E9 /* Debug */,
+				1D9A258C1DD89B73007EE6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D9A258D1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9A258E1DD89B73007EE6E9 /* Debug */,
+				1D9A258F1DD89B73007EE6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D9A25661DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D9A25671DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodel */,
+			);
+			currentVersion = 1D9A25671DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodel */;
+			path = BolsaFamilia_Analytics.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D9A25541DD89B72007EE6E9 /* Project object */;
+}
