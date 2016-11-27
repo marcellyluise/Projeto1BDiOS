@@ -20,6 +20,7 @@
 		1D9A25991DD89C20007EE6E9 /* QuestionThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */; };
 		1D9A259B1DD89C29007EE6E9 /* QuestionFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */; };
 		1D9A259D1DD89C30007EE6E9 /* QuestionFive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */; };
+		1E2C9FEF0DBAE68133BB0AB1 /* Pods_BolsaFamilia_Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61909F947A13C08A30AA89E3 /* Pods_BolsaFamilia_Analytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionThree.storyboard; sourceTree = "<group>"; };
 		1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFour.storyboard; sourceTree = "<group>"; };
 		1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFive.storyboard; sourceTree = "<group>"; };
+		27753AFD3DA0D911B30BE9E9 /* Pods-BolsaFamilia Analytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BolsaFamilia Analytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics.debug.xcconfig"; sourceTree = "<group>"; };
+		61909F947A13C08A30AA89E3 /* Pods_BolsaFamilia_Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BolsaFamilia_Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6493814E5D86F242201A1450 /* Pods-BolsaFamilia Analytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BolsaFamilia Analytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2C9FEF0DBAE68133BB0AB1 /* Pods_BolsaFamilia_Analytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +98,8 @@
 				1D9A25761DD89B73007EE6E9 /* BolsaFamilia AnalyticsTests */,
 				1D9A25811DD89B73007EE6E9 /* BolsaFamilia AnalyticsUITests */,
 				1D9A255D1DD89B73007EE6E9 /* Products */,
+				4B1E1F5BC9E84335A0510468 /* Pods */,
+				D213EBAB57E614DC8AADE212 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,7 @@
 			children = (
 				1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */,
 				1D9A25901DD89BC4007EE6E9 /* MVC */,
+				1DDCA31C1DEB70A1005DBDC3 /* Resources */,
 				1D9A25691DD89B73007EE6E9 /* Assets.xcassets */,
 				1D9A256E1DD89B73007EE6E9 /* Info.plist */,
 				1D9A25661DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld */,
@@ -175,6 +183,30 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		1DDCA31C1DEB70A1005DBDC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B1E1F5BC9E84335A0510468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27753AFD3DA0D911B30BE9E9 /* Pods-BolsaFamilia Analytics.debug.xcconfig */,
+				6493814E5D86F242201A1450 /* Pods-BolsaFamilia Analytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D213EBAB57E614DC8AADE212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61909F947A13C08A30AA89E3 /* Pods_BolsaFamilia_Analytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9A25871DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia Analytics" */;
 			buildPhases = (
+				09EDFC040DAD22A4CA756E35 /* [CP] Check Pods Manifest.lock */,
 				1D9A25581DD89B73007EE6E9 /* Sources */,
 				1D9A25591DD89B73007EE6E9 /* Frameworks */,
 				1D9A255A1DD89B73007EE6E9 /* Resources */,
+				45AF12CF4B73AADF156CCA2D /* [CP] Embed Pods Frameworks */,
+				673F4B08E11E19D842525C92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,18 +278,21 @@
 				TargetAttributes = {
 					1D9A255B1DD89B73007EE6E9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = M368ZHZCHV;
+						DevelopmentTeam = G6SBYX5X3M;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					1D9A25721DD89B73007EE6E9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = M368ZHZCHV;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D9A255B1DD89B73007EE6E9;
 					};
 					1D9A257D1DD89B73007EE6E9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = M368ZHZCHV;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D9A255B1DD89B73007EE6E9;
 					};
@@ -311,6 +349,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09EDFC040DAD22A4CA756E35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45AF12CF4B73AADF156CCA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673F4B08E11E19D842525C92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D9A25581DD89B73007EE6E9 /* Sources */ = {
@@ -392,6 +478,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -442,6 +529,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -469,9 +557,11 @@
 		};
 		1D9A25881DD89B73007EE6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27753AFD3DA0D911B30BE9E9 /* Pods-BolsaFamilia Analytics.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M368ZHZCHV;
+				DEVELOPMENT_TEAM = G6SBYX5X3M;
 				INFOPLIST_FILE = "BolsaFamilia Analytics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-Analytics";
@@ -482,9 +572,11 @@
 		};
 		1D9A25891DD89B73007EE6E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6493814E5D86F242201A1450 /* Pods-BolsaFamilia Analytics.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M368ZHZCHV;
+				DEVELOPMENT_TEAM = G6SBYX5X3M;
 				INFOPLIST_FILE = "BolsaFamilia Analytics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.unb.bd.BolsaFamilia-Analytics";
@@ -570,6 +662,7 @@
 				1D9A25891DD89B73007EE6E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9A258A1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +671,7 @@
 				1D9A258C1DD89B73007EE6E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9A258D1DD89B73007EE6E9 /* Build configuration list for PBXNativeTarget "BolsaFamilia AnalyticsUITests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +680,7 @@
 				1D9A258F1DD89B73007EE6E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
