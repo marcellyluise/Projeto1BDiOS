@@ -20,6 +20,7 @@
 		1D9A25991DD89C20007EE6E9 /* QuestionThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */; };
 		1D9A259B1DD89C29007EE6E9 /* QuestionFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */; };
 		1D9A259D1DD89C30007EE6E9 /* QuestionFive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */; };
+		1DDCA3201DEB77B6005DBDC3 /* Favored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCA31F1DEB77B6005DBDC3 /* Favored.swift */; };
 		1E2C9FEF0DBAE68133BB0AB1 /* Pods_BolsaFamilia_Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61909F947A13C08A30AA89E3 /* Pods_BolsaFamilia_Analytics.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionThree.storyboard; sourceTree = "<group>"; };
 		1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFour.storyboard; sourceTree = "<group>"; };
 		1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFive.storyboard; sourceTree = "<group>"; };
+		1DDCA31F1DEB77B6005DBDC3 /* Favored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favored.swift; sourceTree = "<group>"; };
 		27753AFD3DA0D911B30BE9E9 /* Pods-BolsaFamilia Analytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BolsaFamilia Analytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics.debug.xcconfig"; sourceTree = "<group>"; };
 		61909F947A13C08A30AA89E3 /* Pods_BolsaFamilia_Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BolsaFamilia_Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6493814E5D86F242201A1450 /* Pods-BolsaFamilia Analytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BolsaFamilia Analytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-BolsaFamilia Analytics/Pods-BolsaFamilia Analytics.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,9 +149,9 @@
 		1D9A25901DD89BC4007EE6E9 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				1D9A25931DD89BD2007EE6E9 /* Controller */,
-				1D9A25921DD89BCE007EE6E9 /* View */,
 				1D9A25911DD89BC9007EE6E9 /* Model */,
+				1D9A25921DD89BCE007EE6E9 /* View */,
+				1D9A25931DD89BD2007EE6E9 /* Controller */,
 			);
 			name = MVC;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 		1D9A25911DD89BC9007EE6E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1DDCA31F1DEB77B6005DBDC3 /* Favored.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				1D9A25681DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld in Sources */,
 				1D9A25621DD89B73007EE6E9 /* ViewController.swift in Sources */,
 				1D9A25601DD89B73007EE6E9 /* AppDelegate.swift in Sources */,
+				1DDCA3201DEB77B6005DBDC3 /* Favored.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

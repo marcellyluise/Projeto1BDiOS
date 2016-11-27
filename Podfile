@@ -4,4 +4,6 @@ use_frameworks!
 
 target 'BolsaFamilia Analytics' do
 pod 'Alamofire', '~> 4.0'
+pod "EVReflection"
+
 end
