@@ -1,5 +1,5 @@
 //
-//  Favored.swift
+//  Withdrawl.swift
 //  BolsaFamilia Analytics
 //
 //  Created by Marcelly Luise Souza Godinho on 27/11/16.
@@ -9,9 +9,10 @@
 import UIKit
 import EVReflection
 
-class Favored: EVObject {
-    var name: String?
-    var nis: String?
+class Withdrawl: EVObject {
+    
+    var date: String?
+    var value: String?
     
     open override func propertyMapping() -> [(String?, String?)] {
         return  [
