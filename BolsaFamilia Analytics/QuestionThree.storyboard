@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question Three View Controller-->
         <scene sceneID="iVb-MA-BqG">
             <objects>
-                <viewController id="m2X-mu-wr0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionThreeViewController" id="m2X-mu-wr0" customClass="QuestionThreeViewController" customModule="BolsaFamilia_Analytics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eDW-g1-qjh"/>
                         <viewControllerLayoutGuide type="bottom" id="HuK-JH-wAv"/>
@@ -21,19 +21,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-Sl-3SE">
-                                <rect key="frame" x="146" y="323" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quais foram os gastos por estado?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-Sl-3SE">
+                                <rect key="frame" x="20" y="60" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t9H-PH-42b">
+                                <rect key="frame" x="0.0" y="91" width="375" height="576"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EstatesBudgeCell" textLabel="jG2-Oc-8mb" style="IBUITableViewCellStyleDefault" id="z4u-tb-cmd">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z4u-tb-cmd" id="5Rq-uL-ZrL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jG2-Oc-8mb">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m2X-mu-wr0" id="bge-Zb-yW5"/>
+                                    <outlet property="delegate" destination="m2X-mu-wr0" id="K6M-VV-hsD"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CKR-Sl-3SE" firstAttribute="centerY" secondItem="8rF-OR-Jdl" secondAttribute="centerY" id="JvP-bE-hPy"/>
-                            <constraint firstItem="CKR-Sl-3SE" firstAttribute="centerX" secondItem="8rF-OR-Jdl" secondAttribute="centerX" id="Ltd-p7-fzu"/>
+                            <constraint firstItem="CKR-Sl-3SE" firstAttribute="top" secondItem="eDW-g1-qjh" secondAttribute="bottom" constant="40" id="EwJ-R2-uGJ"/>
+                            <constraint firstItem="t9H-PH-42b" firstAttribute="leading" secondItem="8rF-OR-Jdl" secondAttribute="leading" id="iYX-a0-fH0"/>
+                            <constraint firstItem="t9H-PH-42b" firstAttribute="top" secondItem="CKR-Sl-3SE" secondAttribute="bottom" constant="10" id="lNF-3p-Irf"/>
+                            <constraint firstAttribute="trailing" secondItem="CKR-Sl-3SE" secondAttribute="trailing" constant="20" id="mTR-v6-eWD"/>
+                            <constraint firstAttribute="trailing" secondItem="t9H-PH-42b" secondAttribute="trailing" id="o1L-lB-qrm"/>
+                            <constraint firstItem="CKR-Sl-3SE" firstAttribute="leading" secondItem="8rF-OR-Jdl" secondAttribute="leading" constant="20" id="w1G-Y3-KJU"/>
+                            <constraint firstItem="HuK-JH-wAv" firstAttribute="top" secondItem="t9H-PH-42b" secondAttribute="bottom" id="zTb-TC-dcU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblEstates" destination="t9H-PH-42b" id="fgI-Da-lh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Aq-jq-J1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

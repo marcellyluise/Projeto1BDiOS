@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question Two View Controller-->
         <scene sceneID="y4P-uU-25g">
             <objects>
-                <viewController id="3Lz-WQ-lqa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionTwoViewController" id="3Lz-WQ-lqa" customClass="QuestionTwoViewController" customModule="BolsaFamilia_Analytics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jz5-jR-ZwN"/>
                         <viewControllerLayoutGuide type="bottom" id="qlQ-Ad-iuG"/>
@@ -21,19 +21,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-V4-aSZ">
-                                <rect key="frame" x="146" y="323" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o Estado que mais recebeu recursos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-V4-aSZ">
+                                <rect key="frame" x="20" y="60" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68y-gd-vE3">
+                                <rect key="frame" x="20" y="101" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JSON" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peW-Oi-qp3">
+                                <rect key="frame" x="20" y="182" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4S5-V4-aSZ" firstAttribute="centerX" secondItem="hXH-fW-mgi" secondAttribute="centerX" id="1NI-wu-Nq2"/>
-                            <constraint firstItem="4S5-V4-aSZ" firstAttribute="centerY" secondItem="hXH-fW-mgi" secondAttribute="centerY" id="l5a-i0-moe"/>
+                            <constraint firstItem="peW-Oi-qp3" firstAttribute="top" secondItem="68y-gd-vE3" secondAttribute="bottom" constant="60" id="7yM-DE-ls5"/>
+                            <constraint firstItem="68y-gd-vE3" firstAttribute="leading" secondItem="hXH-fW-mgi" secondAttribute="leading" constant="20" id="8Od-8R-8Gb"/>
+                            <constraint firstItem="4S5-V4-aSZ" firstAttribute="top" secondItem="jz5-jR-ZwN" secondAttribute="bottom" constant="40" id="Nl9-M7-zus"/>
+                            <constraint firstItem="4S5-V4-aSZ" firstAttribute="leading" secondItem="hXH-fW-mgi" secondAttribute="leading" constant="20" id="SSv-Wj-4cF"/>
+                            <constraint firstAttribute="trailing" secondItem="peW-Oi-qp3" secondAttribute="trailing" constant="20" id="Vpn-o7-CNf"/>
+                            <constraint firstAttribute="trailing" secondItem="4S5-V4-aSZ" secondAttribute="trailing" constant="20" id="WWa-vs-fQY"/>
+                            <constraint firstItem="peW-Oi-qp3" firstAttribute="leading" secondItem="hXH-fW-mgi" secondAttribute="leading" constant="20" id="g4I-Cy-dgk"/>
+                            <constraint firstItem="68y-gd-vE3" firstAttribute="top" secondItem="4S5-V4-aSZ" secondAttribute="bottom" constant="20" id="oWa-b3-VgT"/>
+                            <constraint firstAttribute="trailing" secondItem="68y-gd-vE3" secondAttribute="trailing" constant="20" id="t86-SV-XtB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblJSON" destination="peW-Oi-qp3" id="IQN-SK-CNZ"/>
+                        <outlet property="lblResponse" destination="68y-gd-vE3" id="mZr-K8-gz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxw-xG-w44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

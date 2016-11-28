@@ -71,10 +71,32 @@ open class AnswersAPI: NSObject {
     }
     
     // http://52.38.165.107/api/maior-municipio-favorecido
-//    class func retrieveMajorTownship(withCompletionHandler completion: @escaping(_ township: String?, _ error: Error?) -> Void) {
-//        let endPint = Connect.urlBase("maior-municipio-favorecido")
-//        
-//        
-//        
-//    }
+    class func retrieveMajorTownship(withCompletionHandler completion: @escaping(_ township: Township?, _ error: Error?) -> Void) {
+        let endPoint = Connect.urlBase("maior-municipio-favorecido")
+        
+        Alamofire.request(endPoint, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let dic = response.result.value as? NSDictionary {
+                    let resultTownship = Township(dictionary: dic)
+                    completion(resultTownship, nil)
+                } else {
+                    completion(nil, response.result.error)
+                }
+            }
+        }
+    }
+    
+    class func retrieveEstatesBudge(withCompletionHandler completion: @escaping (_ dictionary: NSDictionary?, _ error: Error?) -> Void) {
+        let endPoint = Connect.urlBase("gasto-por-estado")
+        
+        Alamofire.request(endPoint, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let dic = response.result.value as? NSDictionary {
+                    completion(dic, nil)
+                } else {
+                    completion(nil, response.result.error)
+                }
+            }
+        }
+    }
 }
