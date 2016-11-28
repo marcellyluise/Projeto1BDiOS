@@ -49,4 +49,21 @@ open class AnswersAPI: NSObject {
             }
         }
     }
+    
+    class func insertFavored(withName name: String, andNIS nis: String, withCompletionHandler completion: @escaping (_ result: Bool?, _ error: Error?) -> Void) {
+        
+        let endPoint = Connect.urlBase("inserir-favorecido")
+        let parameters = ["name": name, "nis_favorecido": nis]
+        
+        Alamofire.request(endPoint, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            
+            if response.result.isSuccess {
+                completion(true, nil)
+            } else {
+                completion(false, response.result.error)
+            }
+        }
+        
+    }
+    // http://52.38.165.107/api/inserir-favorecido
 }
