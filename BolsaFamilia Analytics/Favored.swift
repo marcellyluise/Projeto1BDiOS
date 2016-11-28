@@ -10,8 +10,11 @@ import UIKit
 import EVReflection
 
 class Favored: EVObject {
-    var name: String?
-    var nis: String?
+    var codigo_siafi: String?
+    var nis_favorecido: String?
+    var valor_parcela: String?
+    var data: String?
+    
     
     open override func propertyMapping() -> [(String?, String?)] {
         return  [

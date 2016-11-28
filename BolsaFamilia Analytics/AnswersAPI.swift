@@ -34,4 +34,19 @@ open class AnswersAPI: NSObject {
             }
         }
     }
+    
+    class func retrieveMajorFavorited(withCompletionHandler completion: @escaping (_ favored: Favored?, _ error: Error?) -> Void) {
+        let endPoint = Connect.urlBase("maior-favorecido")
+        
+        Alamofire.request(endPoint, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let favoredDic = response.result.value as? NSDictionary {
+                    let favored = Favored(dictionary: favoredDic)
+                    completion(favored, nil)
+                } else {
+                    completion(nil, response.result.error)
+                }
+            }
+        }
+    }
 }

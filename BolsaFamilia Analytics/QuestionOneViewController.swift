@@ -10,6 +10,8 @@ import UIKit
 
 class QuestionOneViewController: UIViewController {
     @IBOutlet weak var lblAnswer: UILabel!
+    @IBOutlet weak var lblQuery: UILabel!
+    @IBOutlet weak var lblJSON: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,22 +31,35 @@ class QuestionOneViewController: UIViewController {
     
     // MARK: Get Answer
     func retrieveAnswerOne() {
-        AnswersAPI.retrieveWithdrawls { (withdrawls, error) in
+        AnswersAPI.retrieveMajorFavorited { (favored, error) in
             if let _ = error {
+                
             } else {
-                if let withdrawlsNN = withdrawls {
-                    if let nis = withdrawlsNN[0].nis_favorecido {
-                        if let value = withdrawlsNN[0].valor_parcela {
-                            if let date = withdrawlsNN[0].data {
-                                DispatchQueue.main.async {
-                                    self.lblAnswer.text = "NIS: \(nis), Valor_Parcela: R$\(value), Data: \(date)"
-                                }
-                            }
-                        }
-                    
+                if let favoredNN = favored {
+                    DispatchQueue.main.async {
+                        self.lblAnswer.text = "O favorecido de NIS: \(favoredNN.nis_favorecido!) recebeu em \(favoredNN.data!) um total de \(favoredNN.valor_parcela!) referente ao SIAFI \(favoredNN.codigo_siafi!)"
+                        self.lblJSON.text = String("JSON recebido do web service: \(favoredNN.description)")
                     }
                 }
             }
         }
+        
+//        AnswersAPI.retrieveWithdrawls { (withdrawls, error) in
+//            if let _ = error {
+//            } else {
+//                if let withdrawlsNN = withdrawls {
+//                    if let nis = withdrawlsNN[0].nis_favorecido {
+//                        if let value = withdrawlsNN[0].valor_parcela {
+//                            if let date = withdrawlsNN[0].data {
+//                                DispatchQueue.main.async {
+//                                    self.lblAnswer.text = "NIS: \(nis), Valor_Parcela: R$\(value), Data: \(date)"
+//                                }
+//                            }
+//                        }
+//                    
+//                    }
+//                }
+//            }
+//        }
     }
 }

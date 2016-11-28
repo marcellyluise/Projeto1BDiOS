@@ -64,6 +64,8 @@
                     </view>
                     <connections>
                         <outlet property="lblAnswer" destination="y5J-38-F4t" id="bvP-Fp-GWW"/>
+                        <outlet property="lblJSON" destination="ez8-ez-Kor" id="sZ3-NE-218"/>
+                        <outlet property="lblQuery" destination="vpy-Gy-lse" id="UDA-lx-28E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaW-fE-e4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
