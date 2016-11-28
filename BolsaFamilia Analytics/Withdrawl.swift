@@ -11,8 +11,9 @@ import EVReflection
 
 class Withdrawl: EVObject {
     
-    var date: String?
-    var value: String?
+    var nis_favorecido: String?
+    var valor_parcela: String?
+    var data: String?
     
     open override func propertyMapping() -> [(String?, String?)] {
         return  [
