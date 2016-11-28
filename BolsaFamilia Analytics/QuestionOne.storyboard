@@ -34,38 +34,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JSON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-ez-Kor">
-                                <rect key="frame" x="20" y="258" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.18431372940540314" green="0.20000000298023224" blue="0.23921568691730499" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Query usada" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpy-Gy-lse">
                                 <rect key="frame" x="20" y="202" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.12156862765550613" green="0.17254902422428131" blue="0.32549020648002625" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.18431372940540314" green="0.20000000298023224" blue="0.23921568691730499" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vpy-Gy-lse" firstAttribute="top" secondItem="y5J-38-F4t" secondAttribute="bottom" constant="40" id="3CD-8A-voh"/>
-                            <constraint firstItem="ez8-ez-Kor" firstAttribute="top" secondItem="vpy-Gy-lse" secondAttribute="bottom" constant="35" id="4Ni-Qy-QhT"/>
                             <constraint firstItem="y5J-38-F4t" firstAttribute="leading" secondItem="5Wb-1r-7RF" secondAttribute="leading" id="57Z-mS-BRS"/>
-                            <constraint firstItem="ez8-ez-Kor" firstAttribute="leading" secondItem="vpy-Gy-lse" secondAttribute="leading" id="80U-hZ-igt"/>
                             <constraint firstItem="5Wb-1r-7RF" firstAttribute="leading" secondItem="kRZ-ni-RJc" secondAttribute="leading" constant="20" id="9dk-03-N2d"/>
+                            <constraint firstItem="ez8-ez-Kor" firstAttribute="leading" secondItem="y5J-38-F4t" secondAttribute="leading" id="EuN-xk-46Y"/>
                             <constraint firstItem="5Wb-1r-7RF" firstAttribute="top" secondItem="XmI-nN-Qdr" secondAttribute="bottom" constant="20" id="OQ6-Qt-ZVw"/>
                             <constraint firstItem="y5J-38-F4t" firstAttribute="trailing" secondItem="5Wb-1r-7RF" secondAttribute="trailing" id="Pv1-HB-nFT"/>
-                            <constraint firstItem="vpy-Gy-lse" firstAttribute="leading" secondItem="y5J-38-F4t" secondAttribute="leading" id="mGf-pF-KXx"/>
+                            <constraint firstItem="ez8-ez-Kor" firstAttribute="trailing" secondItem="y5J-38-F4t" secondAttribute="trailing" id="TgO-LA-5tc"/>
                             <constraint firstItem="y5J-38-F4t" firstAttribute="top" secondItem="5Wb-1r-7RF" secondAttribute="bottom" constant="40" id="uUn-Dd-u8J"/>
-                            <constraint firstItem="ez8-ez-Kor" firstAttribute="trailing" secondItem="vpy-Gy-lse" secondAttribute="trailing" id="zCv-5L-vIH"/>
+                            <constraint firstItem="ez8-ez-Kor" firstAttribute="top" secondItem="y5J-38-F4t" secondAttribute="bottom" constant="40" id="zf7-BO-efi"/>
                             <constraint firstAttribute="trailing" secondItem="5Wb-1r-7RF" secondAttribute="trailing" constant="20" id="zhm-SC-ggp"/>
-                            <constraint firstItem="vpy-Gy-lse" firstAttribute="trailing" secondItem="y5J-38-F4t" secondAttribute="trailing" id="zvL-no-QzC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblAnswer" destination="y5J-38-F4t" id="bvP-Fp-GWW"/>
                         <outlet property="lblJSON" destination="ez8-ez-Kor" id="sZ3-NE-218"/>
-                        <outlet property="lblQuery" destination="vpy-Gy-lse" id="UDA-lx-28E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaW-fE-e4e" userLabel="First Responder" sceneMemberID="firstResponder"/>

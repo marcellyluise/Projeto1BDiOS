@@ -10,7 +10,6 @@ import UIKit
 
 class QuestionOneViewController: UIViewController {
     @IBOutlet weak var lblAnswer: UILabel!
-    @IBOutlet weak var lblQuery: UILabel!
     @IBOutlet weak var lblJSON: UILabel!
 
     override func viewDidLoad() {
@@ -37,7 +36,7 @@ class QuestionOneViewController: UIViewController {
             } else {
                 if let favoredNN = favored {
                     DispatchQueue.main.async {
-                        self.lblAnswer.text = "O favorecido de NIS: \(favoredNN.nis_favorecido!) recebeu em \(favoredNN.data!) um total de \(favoredNN.valor_parcela!) referente ao SIAFI \(favoredNN.codigo_siafi!)"
+                        self.lblAnswer.text = "O (a) favorecido (a) \(favoredNN.nome!) de NIS: \(favoredNN.nis_favorecido!) recebeu em \(favoredNN.data!) um total de \(favoredNN.valor_parcela!) referente ao SIAFI \(favoredNN.codigo_siafi!)"
                         self.lblJSON.text = String("JSON recebido do web service: \(favoredNN.description)")
                     }
                 }

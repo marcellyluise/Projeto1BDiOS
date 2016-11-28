@@ -10,6 +10,7 @@ import UIKit
 import EVReflection
 
 class Favored: EVObject {
+    var nome: String?
     var codigo_siafi: String?
     var nis_favorecido: String?
     var valor_parcela: String?
