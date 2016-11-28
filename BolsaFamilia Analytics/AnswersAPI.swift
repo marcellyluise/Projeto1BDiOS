@@ -99,4 +99,21 @@ open class AnswersAPI: NSObject {
             }
         }
     }
+    
+    class func retrieveStateMostFavored(withCompletionHandler completion: @escaping (_ estate: EstateBudge?, _ error: Error?) -> Void) {
+        let endPoint = Connect.urlBase("maior-estado-favorecido")
+        
+        Alamofire.request(endPoint, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let dic = response.result.value as? NSDictionary {
+                    let estate = EstateBudge(dictionary: dic)
+                    completion(estate, nil)
+                } else {
+                    completion(nil, response.result.error)
+                }
+            }
+        }
+    }
+    
+    
 }

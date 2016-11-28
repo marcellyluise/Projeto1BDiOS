@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question Four View Controller-->
         <scene sceneID="omt-wO-Bet">
             <objects>
-                <viewController id="Ya7-dP-hAG" sceneMemberID="viewController">
+                <viewController id="Ya7-dP-hAG" customClass="QuestionFourViewController" customModule="BolsaFamilia_Analytics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ON2-dg-hmK"/>
                         <viewControllerLayoutGuide type="bottom" id="sG0-BL-FPl"/>
@@ -21,23 +21,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-J5-zNj">
-                                <rect key="frame" x="145" y="323" width="85" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual estado que mais recebeu recursos? E qual o valor total?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-J5-zNj">
+                                <rect key="frame" x="20" y="50" width="335" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-cj-vxt">
+                                <rect key="frame" x="20" y="138" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-Q5-mqg">
+                                <rect key="frame" x="20" y="191" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EIp-J5-zNj" firstAttribute="centerX" secondItem="uj1-JB-gZp" secondAttribute="centerX" id="CLk-py-fCl"/>
-                            <constraint firstItem="EIp-J5-zNj" firstAttribute="centerY" secondItem="uj1-JB-gZp" secondAttribute="centerY" id="twW-vF-Aqd"/>
+                            <constraint firstItem="7fh-Q5-mqg" firstAttribute="top" secondItem="MSy-cj-vxt" secondAttribute="bottom" constant="32" id="5o3-o0-gUk"/>
+                            <constraint firstItem="MSy-cj-vxt" firstAttribute="leading" secondItem="EIp-J5-zNj" secondAttribute="leading" id="A1r-Qj-R8w"/>
+                            <constraint firstItem="7fh-Q5-mqg" firstAttribute="trailing" secondItem="MSy-cj-vxt" secondAttribute="trailing" id="Dvy-CS-9vE"/>
+                            <constraint firstItem="EIp-J5-zNj" firstAttribute="leading" secondItem="uj1-JB-gZp" secondAttribute="leading" constant="20" id="TfR-gT-K2K"/>
+                            <constraint firstAttribute="trailing" secondItem="EIp-J5-zNj" secondAttribute="trailing" constant="20" id="VcT-Kk-NWy"/>
+                            <constraint firstItem="MSy-cj-vxt" firstAttribute="top" secondItem="EIp-J5-zNj" secondAttribute="bottom" constant="47" id="dgi-b5-rOa"/>
+                            <constraint firstItem="7fh-Q5-mqg" firstAttribute="leading" secondItem="MSy-cj-vxt" secondAttribute="leading" id="fsw-5h-mr7"/>
+                            <constraint firstItem="MSy-cj-vxt" firstAttribute="trailing" secondItem="EIp-J5-zNj" secondAttribute="trailing" id="kcd-OD-shl"/>
+                            <constraint firstItem="EIp-J5-zNj" firstAttribute="top" secondItem="ON2-dg-hmK" secondAttribute="bottom" constant="30" id="ufk-uw-dSc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblJSON" destination="7fh-Q5-mqg" id="Kcf-vf-1rU"/>
+                        <outlet property="lblResponse" destination="MSy-cj-vxt" id="WHS-b4-owQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbO-IT-xdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="96"/>
+            <point key="canvasLocation" x="93.5" y="95.5"/>
         </scene>
     </scenes>
 </document>

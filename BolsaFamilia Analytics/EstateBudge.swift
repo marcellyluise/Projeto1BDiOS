@@ -10,5 +10,14 @@ import UIKit
 import EVReflection
 
 open class EstateBudge: EVObject {
+    open var uf: String?
+    open var valor: String?
+    
+    open override func propertyMapping() -> [(String?, String?)] {
+        return  [
+            ("createdAt", nil),
+            ("updatedAt", nil)
+        ]
+    }
     
 }
