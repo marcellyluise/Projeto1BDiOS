@@ -22,7 +22,13 @@ class CRUDCreateViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        txtNISFavorecido.layer.borderColor = UIColor.lightGray.cgColor
+        txtNISFavorecido.leftViewMode = .always
+        txtNISFavorecido.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 0))
+        
+        txtNomeFavorecido.layer.borderColor = UIColor.lightGray.cgColor
+        txtNomeFavorecido.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 0))
+        txtNomeFavorecido.leftViewMode = .always
     }
     
     override func viewWillAppear(_ animated: Bool) {
