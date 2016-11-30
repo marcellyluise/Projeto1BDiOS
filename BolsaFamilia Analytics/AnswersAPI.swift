@@ -115,5 +115,21 @@ open class AnswersAPI: NSObject {
         }
     }
     
-    
+    class func updateFavored(withName name: String, withNIS nis: String, withCompletionHandler completion: @escaping (_ bfResponse: BFResponse?, _ error: Error?) -> Void) {
+        
+        let endPoint = Connect.urlBase("atualizar-favorecido")
+        let parameters = ["nome": name, "nis-favorecido": nis]
+        
+        Alamofire.request(endPoint, method: .put, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate(statusCode: 200...399).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let dic = response.result.value as? NSDictionary {
+                    let bfResponse = BFResponse(dictionary: dic)
+                    completion(bfResponse, nil)
+                } else {
+                    completion(nil, response.result.error)
+                }
+                
+            }
+        }
+    }
 }

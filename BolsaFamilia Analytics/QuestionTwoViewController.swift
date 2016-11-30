@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionTwoViewController: UIViewController {
+class QuestionTwoViewController: BaseViewController {
 
     @IBOutlet weak var lblResponse: UILabel!
     @IBOutlet weak var lblJSON: UILabel!
@@ -25,15 +25,21 @@ class QuestionTwoViewController: UIViewController {
     }
     
     func majorInvestimentsForTownship() {
+        startActivityIndicator()
+        
         AnswersAPI.retrieveMajorTownship { (township, error) in
             if let _ = error {
-            
+                DispatchQueue.main.async {
+                    self.stopActivityIndicator()
+                }
+                
             } else {
                 if let townshipNN = township {
                     if let municipio = townshipNN.municipio {
                         if let valor = townshipNN.valor {
                             if let estado = townshipNN.estado {
                                 DispatchQueue.main.async {
+                                    self.stopActivityIndicator()
                                     self.lblResponse.text = "O município \(municipio) do estado de \(estado) recebeu mais investimentos no valor de \(valor)R$ entre os meses Jan/Fev de 2015"
                                     self.lblJSON.text = String(townshipNN.description)
                                 }

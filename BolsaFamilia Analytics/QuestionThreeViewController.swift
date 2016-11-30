@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionThreeViewController: UIViewController {
+class QuestionThreeViewController: BaseViewController {
 
     @IBOutlet weak var tblEstates: UITableView!
     
@@ -19,6 +19,7 @@ class QuestionThreeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         retrieveEstatesBudge()
+        tblEstates.tableFooterView = UIView(frame: CGRect.zero)
         
     }
     
@@ -35,11 +36,16 @@ class QuestionThreeViewController: UIViewController {
     
     
     func retrieveEstatesBudge() {
+        startActivityIndicator()
         AnswersAPI.retrieveEstatesBudge { (dictionary, error) in
             if let _ = error {
+                DispatchQueue.main.async {
+                    self.stopActivityIndicator()
+                }
             } else {
                 if let dic = dictionary {
                     DispatchQueue.main.async {
+                        self.stopActivityIndicator()
                         self.results = NSDictionary(dictionary: dic)
                         self.tblEstates.reloadData()
                     }
@@ -87,7 +93,8 @@ extension QuestionThreeViewController: UITableViewDataSource {
             let keys = Array(arrayLiteral: resultsNN.allKeys)
             let values = Array(arrayLiteral: resultsNN.allValues)
             
-            cell.textLabel?.text = "\(keys[0][indexPath.row]): \(values[0][indexPath.row])R$"
+            cell.textLabel?.text = "\(keys[0][indexPath.row]): "
+            cell.detailTextLabel?.text = "R$\(values[0][indexPath.row])"
         }
         return cell
     }

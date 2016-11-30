@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionOneViewController: UIViewController {
+class QuestionOneViewController: BaseViewController {
     @IBOutlet weak var lblAnswer: UILabel!
     @IBOutlet weak var lblJSON: UILabel!
 
@@ -30,12 +30,14 @@ class QuestionOneViewController: UIViewController {
     
     // MARK: Get Answer
     func retrieveAnswerOne() {
+        startActivityIndicator()
         AnswersAPI.retrieveMajorFavorited { (favored, error) in
             if let _ = error {
-                
+                self.stopActivityIndicator()
             } else {
                 if let favoredNN = favored {
                     DispatchQueue.main.async {
+                        self.stopActivityIndicator()
                         self.lblAnswer.text = "O (a) favorecido (a) \(favoredNN.nome!) de NIS: \(favoredNN.nis_favorecido!) recebeu em \(favoredNN.data!) um total de \(favoredNN.valor_parcela!) referente ao SIAFI \(favoredNN.codigo_siafi!)"
                         self.lblJSON.text = String("JSON recebido do web service: \(favoredNN.description)")
                     }

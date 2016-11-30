@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D9A25601DD89B73007EE6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */; };
-		1D9A25621DD89B73007EE6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25611DD89B73007EE6E9 /* ViewController.swift */; };
 		1D9A25651DD89B73007EE6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25631DD89B73007EE6E9 /* Main.storyboard */; };
 		1D9A25681DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A25661DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld */; };
 		1D9A256A1DD89B73007EE6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25691DD89B73007EE6E9 /* Assets.xcassets */; };
@@ -20,6 +19,7 @@
 		1D9A25991DD89C20007EE6E9 /* QuestionThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */; };
 		1D9A259B1DD89C29007EE6E9 /* QuestionFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */; };
 		1D9A259D1DD89C30007EE6E9 /* QuestionFive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */; };
+		1D9C83B61DEE67B50016608F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C83B51DEE67B50016608F /* BaseViewController.swift */; };
 		1DCE105E1DEC8E2200CAEF05 /* CRUD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCE105D1DEC8E2200CAEF05 /* CRUD.storyboard */; };
 		1DCE10601DEC8E5100CAEF05 /* CRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE105F1DEC8E5100CAEF05 /* CRUDViewController.swift */; };
 		1DCE10621DEC95C600CAEF05 /* CRUDCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE10611DEC95C600CAEF05 /* CRUDCreateViewController.swift */; };
@@ -29,6 +29,8 @@
 		1DCE106A1DECAB0400CAEF05 /* QuestionThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE10691DECAB0400CAEF05 /* QuestionThreeViewController.swift */; };
 		1DCE106C1DECABCB00CAEF05 /* EstateBudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE106B1DECABCB00CAEF05 /* EstateBudge.swift */; };
 		1DCE106E1DECBCAF00CAEF05 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE106D1DECBCAF00CAEF05 /* QuestionFourViewController.swift */; };
+		1DCE10701DED04DE00CAEF05 /* CRUDUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE106F1DED04DE00CAEF05 /* CRUDUpdateViewController.swift */; };
+		1DCE10741DED083A00CAEF05 /* CRUDRetrieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE10731DED083A00CAEF05 /* CRUDRetrieveViewController.swift */; };
 		1DDCA3201DEB77B6005DBDC3 /* Favored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCA31F1DEB77B6005DBDC3 /* Favored.swift */; };
 		1DDCA3221DEB7954005DBDC3 /* SIAFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCA3211DEB7954005DBDC3 /* SIAFI.swift */; };
 		1DDCA3241DEB79EA005DBDC3 /* Withdrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCA3231DEB79EA005DBDC3 /* Withdrawl.swift */; };
@@ -58,7 +60,6 @@
 /* Begin PBXFileReference section */
 		1D9A255C1DD89B73007EE6E9 /* BolsaFamilia Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BolsaFamilia Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9A255F1DD89B73007EE6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D9A25611DD89B73007EE6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D9A25641DD89B73007EE6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D9A25671DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BolsaFamilia_Analytics.xcdatamodel; sourceTree = "<group>"; };
 		1D9A25691DD89B73007EE6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		1D9A25981DD89C20007EE6E9 /* QuestionThree.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionThree.storyboard; sourceTree = "<group>"; };
 		1D9A259A1DD89C29007EE6E9 /* QuestionFour.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFour.storyboard; sourceTree = "<group>"; };
 		1D9A259C1DD89C30007EE6E9 /* QuestionFive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionFive.storyboard; sourceTree = "<group>"; };
+		1D9C83B51DEE67B50016608F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1DCE105D1DEC8E2200CAEF05 /* CRUD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CRUD.storyboard; sourceTree = "<group>"; };
 		1DCE105F1DEC8E5100CAEF05 /* CRUDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDViewController.swift; sourceTree = "<group>"; };
 		1DCE10611DEC95C600CAEF05 /* CRUDCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDCreateViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		1DCE10691DECAB0400CAEF05 /* QuestionThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionThreeViewController.swift; sourceTree = "<group>"; };
 		1DCE106B1DECABCB00CAEF05 /* EstateBudge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstateBudge.swift; sourceTree = "<group>"; };
 		1DCE106D1DECBCAF00CAEF05 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
+		1DCE106F1DED04DE00CAEF05 /* CRUDUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDUpdateViewController.swift; sourceTree = "<group>"; };
+		1DCE10731DED083A00CAEF05 /* CRUDRetrieveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDRetrieveViewController.swift; sourceTree = "<group>"; };
 		1DDCA31F1DEB77B6005DBDC3 /* Favored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favored.swift; sourceTree = "<group>"; };
 		1DDCA3211DEB7954005DBDC3 /* SIAFI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAFI.swift; sourceTree = "<group>"; };
 		1DDCA3231DEB79EA005DBDC3 /* Withdrawl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Withdrawl.swift; sourceTree = "<group>"; };
@@ -216,15 +220,33 @@
 		1D9A25931DD89BD2007EE6E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1D9A25611DD89B73007EE6E9 /* ViewController.swift */,
+				1D9C83B51DEE67B50016608F /* BaseViewController.swift */,
+				1DCE10721DED04ED00CAEF05 /* CRUD */,
+				1DCE10711DED04E300CAEF05 /* Questions */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1DCE10711DED04E300CAEF05 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
 				1DDCA32A1DEB875A005DBDC3 /* QuestionOneViewController.swift */,
 				1DCE10671DECA69000CAEF05 /* QuestionTwoViewController.swift */,
 				1DCE10691DECAB0400CAEF05 /* QuestionThreeViewController.swift */,
 				1DCE106D1DECBCAF00CAEF05 /* QuestionFourViewController.swift */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		1DCE10721DED04ED00CAEF05 /* CRUD */ = {
+			isa = PBXGroup;
+			children = (
 				1DCE105F1DEC8E5100CAEF05 /* CRUDViewController.swift */,
 				1DCE10611DEC95C600CAEF05 /* CRUDCreateViewController.swift */,
+				1DCE106F1DED04DE00CAEF05 /* CRUDUpdateViewController.swift */,
+				1DCE10731DED083A00CAEF05 /* CRUDRetrieveViewController.swift */,
 			);
-			name = Controller;
+			name = CRUD;
 			sourceTree = "<group>";
 		};
 		1DDCA31C1DEB70A1005DBDC3 /* Resources */ = {
@@ -461,19 +483,21 @@
 				1DCE10681DECA69000CAEF05 /* QuestionTwoViewController.swift in Sources */,
 				1DDCA3221DEB7954005DBDC3 /* SIAFI.swift in Sources */,
 				1D9A25681DD89B73007EE6E9 /* BolsaFamilia_Analytics.xcdatamodeld in Sources */,
+				1D9C83B61DEE67B50016608F /* BaseViewController.swift in Sources */,
 				1DCE10621DEC95C600CAEF05 /* CRUDCreateViewController.swift in Sources */,
 				1DCE10661DECA1FD00CAEF05 /* BFResponse.swift in Sources */,
 				1DDCA32B1DEB875A005DBDC3 /* QuestionOneViewController.swift in Sources */,
 				1DDCA3291DEB7B8C005DBDC3 /* Connect.swift in Sources */,
+				1DCE10741DED083A00CAEF05 /* CRUDRetrieveViewController.swift in Sources */,
 				1DDCA3241DEB79EA005DBDC3 /* Withdrawl.swift in Sources */,
 				1DCE106C1DECABCB00CAEF05 /* EstateBudge.swift in Sources */,
 				1DCE106A1DECAB0400CAEF05 /* QuestionThreeViewController.swift in Sources */,
-				1D9A25621DD89B73007EE6E9 /* ViewController.swift in Sources */,
 				1D9A25601DD89B73007EE6E9 /* AppDelegate.swift in Sources */,
 				1DCE10641DEC9E3300CAEF05 /* Township.swift in Sources */,
 				1DDCA3201DEB77B6005DBDC3 /* Favored.swift in Sources */,
 				1DDCA3271DEB7B76005DBDC3 /* AnswersAPI.swift in Sources */,
 				1DCE106E1DECBCAF00CAEF05 /* QuestionFourViewController.swift in Sources */,
+				1DCE10701DED04DE00CAEF05 /* CRUDUpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

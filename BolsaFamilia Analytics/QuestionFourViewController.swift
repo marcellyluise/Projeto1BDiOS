@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionFourViewController: UIViewController {
+class QuestionFourViewController: BaseViewController {
     @IBOutlet weak var lblResponse: UILabel!
     @IBOutlet weak var lblJSON: UILabel!
     
@@ -26,15 +26,19 @@ class QuestionFourViewController: UIViewController {
     
 
     func retrieveStateMost() {
+        startActivityIndicator()
         AnswersAPI.retrieveStateMostFavored { (estate, error) in
             if let _ = error {
-            
+                DispatchQueue.main.async {
+                    self.stopActivityIndicator()
+                }
             } else {
                 if let estateNN = estate {
                     
                     if let uf = estateNN.uf {
                         if let value = estateNN.valor {
                             DispatchQueue.main.async {
+                                self.stopActivityIndicator()
                                 self.lblResponse.text = "O estado \(uf) foi o estado que mais recebeu recusos totalizando em um valor de \(value)R$"
                                 
                                 self.lblJSON.text = String(estateNN.description)
